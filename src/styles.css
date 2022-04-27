@@ -1,0 +1,180 @@
+.mat-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: lightgray;
+}
+
+.mat-card#first-card{
+    padding: 0;
+}
+
+/*.mat-card#second-card{
+    background-color: lightgray;
+}
+.mat-card#third-card{
+    background-color: lightgray;
+}
+.mat-card#fourth-card{
+    background-color: lightgray;
+}
+.mat-card#fifth-card{
+    background-color: lightgray;
+}
+.mat-card#sixth-card{
+    background-color: lightgray;
+}*/
+
+div#profile-background{
+    display: flex;    
+}
+
+div#profile-background img{
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-top: -110px;
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-arg-prog{
+    margin-left: 20px;
+}
+
+#login{
+    margin-top: 25px;
+    margin-right: 10px;
+    border: 3px solid;
+    width: 4.5rem;
+    height: 2.5rem;
+}
+
+#logo-ig{
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+#logo-fb{
+    margin-top: 26px;
+    margin-right: 20px;
+}
+
+ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+text-align: right;
+}
+
+li{
+/*background-image: url(arrow.gif);*/
+background-repeat: no-repeat;
+background-position: 100% .4em;
+padding-right: .6em;
+}
+
+#logo-conicet{
+    margin-top: 25px;
+}
+
+#logo-unl{
+    margin-top: 25px;
+}
+
+#logo-unl-2{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+#logo-intec{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+#logo-arg-programa-2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+#logo-rg{
+    margin-left: 20px;
+    margin-right: 80px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.progress{
+    height: 25px;
+}
+
+.scrolldown{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) 
+    rotate(45deg);
+
+}
+
+.scrolldown span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%; 
+    height: 100%;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: 0s;
+}
+
+@keyframes animate{
+    0%{
+        top:-5px;
+        left:-5px;
+        opacity:0;
+    }
+
+    25%{
+        top:0px;
+        left:0px;
+        opacity:1;
+    }
+
+    100%{
+        top:5px;
+        left:5px;
+        opacity:0;
+    }
+}
