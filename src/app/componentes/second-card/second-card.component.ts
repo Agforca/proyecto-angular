@@ -18,4 +18,15 @@ export class SecondCardComponent implements OnInit {
     });
   }
 
+  textoAcercaDe = "Ingeniero Químico. Doctor en Ingeniería Química pronto.";
+  mostrarInput = "none";  
+
+  onClick(){
+    this.mostrarInput ="block";
+  }
+
+  cambiarTextoAcercaDe(valor: string){
+    this.textoAcercaDe=valor;
+  }
 }
+

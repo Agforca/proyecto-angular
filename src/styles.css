@@ -9,22 +9,6 @@
     padding: 0;
 }
 
-/*.mat-card#second-card{
-    background-color: lightgray;
-}
-.mat-card#third-card{
-    background-color: lightgray;
-}
-.mat-card#fourth-card{
-    background-color: lightgray;
-}
-.mat-card#fifth-card{
-    background-color: lightgray;
-}
-.mat-card#sixth-card{
-    background-color: lightgray;
-}*/
-
 div#profile-background{
     display: flex;    
 }
@@ -72,7 +56,6 @@ text-align: right;
 }
 
 li{
-/*background-image: url(arrow.gif);*/
 background-repeat: no-repeat;
 background-position: 100% .4em;
 padding-right: .6em;

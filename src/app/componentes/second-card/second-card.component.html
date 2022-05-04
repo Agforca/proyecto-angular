@@ -4,18 +4,15 @@
         <div class="card-titles">
           <h2>Acerca de</h2>
         </div>
-        <div>
-          <p id="text-acercade">Ingeniero Químico. Doctor en Ingeniería Química pronto.</p>
-        </div>
-        <div>
-          <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
-        </div>
+        <div>{{ textoAcercaDe }}</div>
+        <input type="text" 
+               (ngModel)="textoAcercaDe"
+               [ngStyle]="{ display: mostrarInput }"
+        />
       </div>
       <div class="col">
-        <div class="btn-edit float-end" onclick="cambiar_parrafo()">
-          <i class="fa fa-pen"></i>
-        </div><br>
-        <div class="btn-del float-end"><i class="fas fa-times"></i></div>
+        <div class="btn-edit float-end fa fa-pen" (click)="onClick()"></div><br>
+        <div class="btn-del float-end fa fa-times"></div>
       </div>
     </div>
-  </div>
+  </div>  
