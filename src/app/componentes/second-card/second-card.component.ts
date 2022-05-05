@@ -18,7 +18,7 @@ export class SecondCardComponent implements OnInit {
     });
   }
 
-  textoAcercaDe = "Ingeniero Químico. Doctor en Ingeniería Química pronto...";
+  textoAcercaDe = "Ingeniero Químico. Doctor en Ingeniería Química pronto......";
   mostrarInput = "none";  
 
   onClick(){
