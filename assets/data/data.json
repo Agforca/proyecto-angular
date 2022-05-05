@@ -1,0 +1,20 @@
+{
+    "name": "Agustin Forchetti",
+    "backImage": "assets/images/banner.jpg",
+    "image": "assets/images/perfil.jpeg",
+    "position": "Ingeniero Químico",
+    "company":{
+        "name":"CONICET",
+        "img": "assets/images/logoConicet.jpg",
+        "url":"https://www.conicet.gov.ar/new_scp/detalle.php?id=52556&datos_academicos=yes"
+    },
+    "school":{
+        "name":"Universidad Nacional del Litoral",
+        "img":"assets/images/logoUnl.jpg",
+        "url":"https://www.unl.edu.ar/"
+    },
+    "ubication":"Santa Fe",
+    "about":"Ingeniero Químico. Doctor en Ingeniería Química pronto."
+    
+
+}
