@@ -1,0 +1,47 @@
+<app-encabezado></app-encabezado>
+
+<app-first-card></app-first-card>
+
+<app-second-card></app-second-card>
+
+<app-third-card></app-third-card>
+
+<app-fourth-card></app-fourth-card>
+
+<app-fifth-card></app-fifth-card>
+
+<app-sixth-card></app-sixth-card>
+
+<script src="https://kit.fontawesome.com/cedfb124d3.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script>
+    function cambiar_parrafo() {
+      document.getElementById("edit-acercade").style.display ="block";
+      let texto = document.getElementById("text-acercade").innerText;
+      console.log(texto);
+    };
+
+    function myFunction2(valor) {
+      document.getElementById("text-acercade").innerText = valor;
+    };
+
+    function logMessage(message) {
+      console.log(message + "<br>");
+    }
+
+    let textarea = document.getElementById("edit-acercade")
+    textarea.addEventListener('keyup', (e) => {
+      logMessage('Key "${e.key}" released [event: keyup]');
+      if (e.key=="Enter") {
+        document.getElementById("edit-acercade").style.display="none"
+      }
+    });  
+</script>

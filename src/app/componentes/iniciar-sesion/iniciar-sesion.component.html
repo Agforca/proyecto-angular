@@ -1,0 +1,17 @@
+<h1 class="m-5">Iniciar Sesión</h1>
+
+<form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+  <div class="form-outline form-white mb-3">
+    <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required [ngModelOptions]="{standalone: true}">
+    <label for="nombreUsuario" class="form-label">Usuario</label>
+  </div>
+
+  <div class="form-outline form-white mb-3">
+    <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password" required [ngModelOptions]="{standalone: true}">
+    <label for="password" class="form-label">Contraseña</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Login</button>
+
+</form>

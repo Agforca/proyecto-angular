@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +11,11 @@ import { ThirdCardComponent } from './componentes/third-card/third-card.componen
 import { FourthCardComponent } from './componentes/fourth-card/fourth-card.component';
 import { FifthCardComponent } from './componentes/fifth-card/fifth-card.component';
 import { SixthCardComponent } from './componentes/sixth-card/sixth-card.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { PortfolioService } from './servicios/portfolio.service';
+import { interceptorProvider, InterceptorService } from './servicios/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -22,15 +26,22 @@ import { HttpClientModule } from '@angular/common/http';
     ThirdCardComponent,
     FourthCardComponent,
     FifthCardComponent,
-    SixthCardComponent
+    SixthCardComponent,
+    IniciarSesionComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+ providers: [
+  interceptorProvider
+],
+
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

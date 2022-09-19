@@ -11,7 +11,8 @@
         </div>
       </div>
       <div class="col">
-        <a name="" id="login" class="btn btn-light float-end" href="#" role="button">Login</a>
+        <a name="" id="login" class="btn btn-light float-end" (click)="login()" role="button" *ngIf="!isLogged">Login</a>
+        <a name="" id="logout" class="btn btn-light float-end" (click)="onLogOut()" role="button" *ngIf="isLogged">Logout</a>
         <a href="https://www.instagram.com/"><img id="logo-ig" class="img-fluid float-end" src="assets/images/logo-ig.png"
             alt="Logo IG"></a>
         <a href="https://es-la.facebook.com/agustin.forchetti"><img id="logo-fb" class="img-fluid float-end"
